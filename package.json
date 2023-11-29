@@ -1,7 +1,14 @@
 {
   "name": "grill",
   "packageManager": "yarn@4.0.2",
+  "scripts": {
+    "dev": "turbo run dev"
+  },
   "workspaces": [
+    "apps/*",
     "packages/*"
-  ]
+  ],
+  "devDependencies": {
+    "turbo": "^1.10.16"
+  }
 }
