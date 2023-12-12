@@ -2,7 +2,7 @@
 
 # The Island Express Grill
 
-> Authentic Hatian & Caribbean cuisine
+> Authentic Haitian & Caribbean Cuisine
 
 ## Design & User Interface
 

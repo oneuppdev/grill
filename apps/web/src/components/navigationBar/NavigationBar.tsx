@@ -23,16 +23,13 @@ const NavigationBar = (): JSX.Element => {
 
   return (
     <HStack
+      height="8vh"
       justifyContent={{
         lg: 'space-around',
         sm: 'space-between',
       }}
-      padding={{
-        lg: 0,
-        sm: 4,
-      }}
     >
-      <Image src={logo} boxSize="80px" />
+      <Image src={logo} boxSize="60px" />
       <Show above="lg">
         <List display="flex" gap={12}>
           <ListItem>Home</ListItem>
