@@ -2,7 +2,9 @@
   "name": "@oneuppdev/grill",
   "packageManager": "yarn@4.0.2",
   "scripts": {
-    "dev": "turbo run dev"
+    "dev": "yarn workspace web dev",
+    "build": "turbo run build",
+    "deploy:dev": "yarn workspace infra deploy:dev"
   },
   "workspaces": [
     "apps/*",

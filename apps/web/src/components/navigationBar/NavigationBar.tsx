@@ -23,7 +23,6 @@ const NavigationBar = (): JSX.Element => {
 
   return (
     <HStack
-      height="8vh"
       justifyContent={{
         lg: 'space-around',
         sm: 'space-between',
