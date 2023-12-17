@@ -1,23 +1,21 @@
-import { Grid, GridItem } from '@chakra-ui/react';
+// import { Grid, GridItem } from '@chakra-ui/react';
 import { Outlet } from 'react-router-dom';
-import NavigationBar from '@components/navigationBar';
+import { Container } from 'react-bootstrap';
+
+import Header from '@components/header';
+import Footer from '@components/footer';
 
 const RootLayout = (): JSX.Element => {
   return (
-    <Grid
-      templateAreas={`"nav nav" "main main"`}
-      padding={{
-        lg: 8,
-        sm: 2,
-      }}
-    >
-      <GridItem area="nav">
-        <NavigationBar />
-      </GridItem>
-      <GridItem area="main">
-        <Outlet />
-      </GridItem>
-    </Grid>
+    <>
+      <Header />
+      <main className='py-3'>
+        <Container>
+          <Outlet />
+        </Container>
+      </main>
+      <Footer />
+    </>
   );
 };
 
