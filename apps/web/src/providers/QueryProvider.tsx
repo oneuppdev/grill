@@ -4,7 +4,13 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 export interface QueryProviderProps extends React.PropsWithChildren {}
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 300000,
+    },
+  },
+});
 
 const QueryProvider = ({ children }: QueryProviderProps): JSX.Element => {
   return (
