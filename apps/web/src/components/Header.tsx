@@ -8,7 +8,7 @@ const Header = (): JSX.Element => {
   return (
     <header className='flex items-center justify-between bg-white p-6'>
       <article className='flex items-center gap-4'>
-        <Button variant='icon' className='text-[#311F09]'>
+        <Button variant='icon' className='text-[#FF8A00]'>
           <BiBowlRice />
         </Button>
         <span>IEG</span>
@@ -23,10 +23,10 @@ const Header = (): JSX.Element => {
         <li>Contact us</li>
       </ul>
       <section className='flex gap-5'>
-        <Button variant='icon' className='text-[#311F09]'>
+        <Button variant='icon' className='text-[#FF8A00]'>
           <BsCart3 />
         </Button>
-        <Button variant='icon' className='text-[#311F09] lg:hidden'>
+        <Button variant='icon' className='text-[#FF8A00] lg:hidden'>
           <PiSquaresFour />
         </Button>
         <Button className='hidden lg:inline-block'>Log In</Button>
