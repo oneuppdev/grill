@@ -22,7 +22,7 @@ const Button = ({
         value = `rounded-full px-8 py-4 bg-[#FF8A00] ${value}`;
         break;
       case 'icon':
-        value = `flex h-[50px] w-[50px] items-center justify-center rounded-full bg-[#D0CCC7]/15 ${value}`;
+        value = `flex h-[50px] w-[50px] items-center justify-center rounded-full bg-[#D0CCC7]/60 ${value}`;
         break;
     }
     return value;
